@@ -69,6 +69,12 @@ class MotionDetector: ObservableObject {
     }
 }
 
+extension MotionDetector {
+    func started() -> MotionDetector {
+        start()
+        return self
+    }
+}
 
 extension UIDeviceOrientation {
     func adjustedRollAndPitch(_ attitude: CMAttitude) -> (roll: Double, pitch: Double) {
