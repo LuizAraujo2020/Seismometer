@@ -1,10 +1,10 @@
 import SwiftUI
 
 @main
-struct MyApp: App {
+struct SeismometerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SeismometerBrowser()
         }
     }
 }
